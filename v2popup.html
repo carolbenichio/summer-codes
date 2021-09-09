@@ -8,22 +8,86 @@
   <link rel="stylesheet" href="v2popup.css">
 </head>
 <body>
-  <h1>V2 Pop-Up</h1>
-  <a href="https://app.betrybe.com/community" class="container_button">
-    <div class="container_button-left_bar"></div>
-    <div class="container_button-content">
-      <img class="container_button-image" src="slack-icon.svg" alt="slack-icon">
-      <div clas="container_button-content-text">  
-        <p class="container_button-title">
-          Comunidade do Slack
-        </p>
-        <p class="container_button-text">
-          Tire as dúvidas do curso introdutório na <u>comunidade Trybe do Slack</u>
-        </p>
+  <h2>Versões Botão Flutuante</h2>
+  <h3>V2</h3>
+  <div>
+    <a href="https://app.betrybe.com/community" class="container_button2">
+      <div class="container_button-left_bar2"></div>
+      <div class="container_button-content2">
+        <img class="container_button-image2" src="slack-icon.svg" alt="slack-icon">
+        <div clas="container_button-content-text2">  
+          <p class="container_button-title2">
+            Comunidade do Slack
+          </p>
+          <p class="container_button-text2">
+            Tire as dúvidas do curso introdutório na <u>comunidade Trybe do Slack</u>
+          </p>
+        </div>
+        <!-- <img class="container_close-btn2" src="close_24px.png" alt="close-btn"> -->
       </div>
+    </a>
+  </div>
+  <h3>V3</h3>
+  <div>
+    <a href="https://app.betrybe.com/community" class="container_button3">
+      <div class="container_button-left_bar3"></div>
+      <div class="container_button-content3">
+        <img class="container_button-image3" src="slack-icon.svg" alt="slack-icon">
+        <div clas="container_button-content-text3">  
+          <p class="container_button-title3">
+            Comunidade do Slack
+          </p>
+          <p class="container_button-text3">
+            Tire as dúvidas do curso introdutório na <u>comunidade Trybe do Slack</u>
+          </p>
+        </div>
+        <img class="container_close-btn3" src="close_24px.png" alt="close-btn">
+      </div>
+    </a>
+  </div>
+  <h3>V4</h3>
+  <div>
+    <a href="https://app.betrybe.com/community" class="container_button4">
+      <div class="container_button-left_bar4"></div>
+      <div class="container_button-content4">
+        <img class="container_button-image4" src="slack-icon.svg" alt="slack-icon">
+        <div clas="container_button-content-text4">  
+          <p class="container_button-title4">
+            Comunidade do Slack
+          </p>
+          <p class="container_button-text4">
+            Tire as dúvidas do curso introdutório na <u>comunidade Trybe do Slack</u>
+          </p>
+        </div>
+        <img class="container_close-btn4" src="close_24px.png" alt="close-btn">
+      </div>
+    </a>
+  </div>
+  <!-- CORRECT POSITION -->
+  <!-- <div>
+    <a href="https://app.betrybe.com/community" class="container_button">
+      <div class="container_button-left_bar"></div>
+      <div class="container_button-content">
+        <img class="container_button-image" src="slack-icon.svg" alt="slack-icon">
+        <div clas="container_button-content-text">  
+          <p class="container_button-title">
+            Comunidade do Slack
+          </p>
+          <p class="container_button-text">
+            Tire as dúvidas do curso introdutório na <u>comunidade Trybe do Slack</u>
+          </p>
+        </div>
         <img class="container_close-btn" src="close_24px.png" alt="close-btn">
-    </div>
-  </a>
-  <script src="v2popup.js"></script>
+      </div>
+    </a>
+  </div> -->
+  <script>
+    const removeBtn = ({target}) => {
+      target.parentNode.parentNode.remove();
+    }
+    const closeBtn = document.getElementsByClassName('container_close-btn');
+    console.log(closeBtn[0].parentNode.parentNode)
+    closeBtn[0].addEventListener('click', removeBtn)
+  </script>
 </body>
 </html>
